@@ -1,0 +1,42 @@
+
+.barfiller {
+  width: 100%;
+  height: 12px;
+  background:  #ccc;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 1000px;
+}
+
+.barfiller .fill {
+  border-radius: 1000px;
+  display: block;
+  position: relative;
+  width: 0px;
+  height: 100%;
+  background: #333;
+  z-index: 1;
+}
+
+.barfiller .tipWrap { display: none; }
+
+.barfiller .tip {
+  font-weight: 700;
+  margin-top: -30px;
+  padding: 2px 4px;
+  font-size: 18px;
+  color: #001659;
+  left: 0px;
+  position: absolute;
+  z-index: 2;
+}
+
+.barfiller .tip:after {
+  border-width: 6px 6px 0 6px;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 9px;
+  top: 100%;
+  z-index: 9
+}
